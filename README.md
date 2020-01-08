@@ -39,6 +39,23 @@ TFile**         test.root
    KEY: TH1D     npmts_norm;1    npmts_norm
 ```
 
+### How to use
+
+The usage of ```bxdata.C``` is very simple:
+
+```c++
+    #include "bxdata.C"
+    // BxData object
+    BxData* bxdata = new BxData(fname);
+    // loop over events and apply conditions
+    bxdata->Loop();
+    // save histograms
+    bxdata->SaveHistos(outname);
+```    
+
+Check out ```loop_template.C``` for more.
+
+
 ### How to compile ```loop_template.C```
 
 Providing your path to ```Echidna/rootechidna.so```, compile via:
