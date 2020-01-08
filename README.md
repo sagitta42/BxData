@@ -61,6 +61,8 @@ And do:
 bxcompile loop_template.C
 ```
 
+(do not forget ```source ~/.bashrc.custom```)
+
 
 ## Customize ```bxdata.C```
 
@@ -82,6 +84,5 @@ bxcompile loop_template.C
 
 3. Edit function ```BxData::Loop()``` to add conditions, calculations and histogram filling.
 
-(do not forget ```source ~/.bashrc.custom```)
 
 
